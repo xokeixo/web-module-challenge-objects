@@ -87,7 +87,7 @@ Reyna's feedback is missing! Use what you know to do the following: (no function
   1. Add this feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays"
   2. log the reviews array to the console to check your work
 */
-reviews.push({name: 'Markeisha', rating: 1, feedback: 'Definitely would NOT reccomend this place'});
+reviews[7].feedback = 'this place is chill with really cool people, great for getting work done on weekdays';
 console.log(reviews);
 
 
@@ -102,9 +102,18 @@ Write a function that creates an object with name, rating, feedback, add the new
   4. should return the resulting array
 */
 
-function addReview(/*Your Code Here */){
-  /*Your Code Here */
+// DO THIS ONE!!
+function addReview(name, rating, feedback){
+  const obj = {
+    name,
+    rating,
+    feedback,
+  }
+ 
 }
+console.log('Daniela', 5, 'Beautiful atmosphere and wonderful vegan options!');
+
+
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Write a function to return a review based on the index of the review in the array.
@@ -117,10 +126,10 @@ Use the getReviewByIndex function below to do the following:
 */
 
 
-function getReviewByIndex(/*Your code here*/) {
-  /*Your code here*/
+function getReviewByIndex(array, number) {
+  return `${array[number].name} gave restaurant a ${array[number].rating} star review, and their feedback was ${array[number].feedback}`
 }
-
+console.log(getReviewByIndex(reviews, 2));
 
   
 
@@ -136,10 +145,10 @@ Use the getLastReview function below to do the following:
 */
 
 
-function getLastReview(/*Your code here*/) {
-  /*Your code here*/
+function getLastReview(array) {
+  return `${array[array.length -1].name} gave the restaurant a ${array[array.length -1]. rating} start rating, and their feedback was: ${array[array.length -1].feedback}`;
 } 
-
+console.log(getLastReview(reviews));
 
 
 ///////////////🍔☕️🍽 STRETCH🍔☕️🍽////////////////////
@@ -158,9 +167,12 @@ Use the getReviewsByRating function below to do the following:
   ]
 */
 
- function getReviewByRating(/* code here */) {
-    /* code here */
+ function getReviewByRating(reviews) {
+  //  for(let i = 0; i < reviews.length; i++){
+      
+  //  }
   }
+  // console.log(getReviewByRating(reviews, 4));
 
   
 /* 💪💪💪💪💪💪💪💪💪💪 STRETCH 2: 💪💪💪💪💪💪💪💪💪💪   
