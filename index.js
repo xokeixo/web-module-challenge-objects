@@ -112,7 +112,7 @@ function addReview(array, name, rating, feedback){
 reviews.push(obj);
 return reviews;
 }
-console.log(addReview('task 5:', '', 'Daniela', 5 , 'Beautiful atmosphere and wonderful vegan options!'));
+console.log(addReview('', 'Daniela', 5 , 'Beautiful atmosphere and wonderful vegan options!'));
  
 
 
@@ -149,7 +149,7 @@ Use the getLastReview function below to do the following:
 
 
 function getLastReview(array) {
-  return `${array[array.length -1].name} gave the restaurant a ${array[array.length -1]. rating} start rating, and their feedback was: ${array[array.length -1].feedback}`;
+  return `${array[array.length -1].name} gave the restaurant a ${array[array.length -1].rating} star rating, and their feedback was: ${array[array.length -1].feedback}`;
 } 
 console.log(getLastReview(reviews));
 
