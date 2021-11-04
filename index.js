@@ -103,15 +103,18 @@ Write a function that creates an object with name, rating, feedback, add the new
 */
 
 // DO THIS ONE!!
-function addReview(name, rating, feedback){
+function addReview(array, name, rating, feedback){
   const obj = {
     name,
     rating,
     feedback,
   }
- 
+reviews.push(obj);
+return reviews;
 }
-console.log('Daniela', 5, 'Beautiful atmosphere and wonderful vegan options!');
+console.log(addReview('task 5:', '', 'Daniela', 5 , 'Beautiful atmosphere and wonderful vegan options!'));
+ 
+
 
 
 
@@ -127,7 +130,7 @@ Use the getReviewByIndex function below to do the following:
 
 
 function getReviewByIndex(array, number) {
-  return `${array[number].name} gave restaurant a ${array[number].rating} star review, and their feedback was ${array[number].feedback}`
+  return `${array[number].name} gave the restaurant a ${array[number].rating} star review, and their feedback was: ${array[number].feedback}`
 }
 console.log(getReviewByIndex(reviews, 2));
 
