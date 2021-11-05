@@ -109,10 +109,10 @@ function addReview(array, name, rating, feedback){
     rating,
     feedback,
   }
-reviews.push(obj);
-return reviews;
+array.push(obj);
+return array;
 }
-console.log(addReview('', 'Daniela', 5 , 'Beautiful atmosphere and wonderful vegan options!'));
+console.log(addReview(reviews, 'Daniela', 5 , 'Beautiful atmosphere and wonderful vegan options!'));
  
 
 
